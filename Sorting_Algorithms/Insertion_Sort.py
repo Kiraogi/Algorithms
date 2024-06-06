@@ -15,6 +15,7 @@
 массивах, где требуется меньше перемещений.
 """
 
+
 def insertion_sort(arr):
     for i in range(1, len(arr)):
         key = arr[i]
@@ -25,6 +26,7 @@ def insertion_sort(arr):
             arr[j + 1] = arr[j]
             j -= 1
         arr[j + 1] = key
+
 
 # Пример использования
 array = [4, 3, 2, 10, 12, 1, 5, 6]

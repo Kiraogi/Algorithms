@@ -17,6 +17,7 @@
 Процесс повторяется до тех пор, пока все элементы не будут извлечены.
 """
 
+
 def heapify(arr, n, i):
     largest = i
     left = 2 * i + 1
@@ -32,6 +33,7 @@ def heapify(arr, n, i):
         arr[i], arr[largest] = arr[largest], arr[i]
         heapify(arr, n, largest)
 
+
 def heap_sort(arr):
     n = len(arr)
 
@@ -40,9 +42,10 @@ def heap_sort(arr):
         heapify(arr, n, i)
 
     # Один за другим извлекаем элементы из кучи
-    for i in range(n-1, 0, -1):
+    for i in range(n - 1, 0, -1):
         arr[i], arr[0] = arr[0], arr[i]  # swap
         heapify(arr, i, 0)
+
 
 # Пример использования
 array = [12, 11, 13, 5, 6, 7]

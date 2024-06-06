@@ -5,6 +5,7 @@
 отсортированные половины в один отсортированный массив.
 """
 
+
 def merge_sort(arr):
     if len(arr) <= 1:
         return arr
@@ -13,6 +14,7 @@ def merge_sort(arr):
     right = merge_sort(arr[mid:])
 
     return merge(left, right)
+
 
 def merge(left, right):
     result = []
@@ -27,6 +29,7 @@ def merge(left, right):
     result.extend(left[i:])
     result.extend(right[j:])
     return result
+
 
 # Пример использования
 array = [3, 6, 8, 10, 1, 2, 1]

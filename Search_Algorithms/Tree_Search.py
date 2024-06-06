@@ -9,11 +9,15 @@ DFS исследует дерево, идя как можно глубже вд�
 
 Пример рекурсивного DFS в бинарном дереве:
 """
+from collections import deque
+
+
 class TreeNode:
     def __init__(self, value=0, left=None, right=None):
         self.value = value
         self.left = left
         self.right = right
+
 
 def dfs(root, target):
     if root is None:
@@ -22,6 +26,7 @@ def dfs(root, target):
         return True
     # Продолжаем поиск в поддеревьях
     return dfs(root.left, target) or dfs(root.right, target)
+
 
 # Пример использования
 root = TreeNode(1,
@@ -43,7 +48,7 @@ BFS исследует дерево уровень за уровнем, начи
 
 Пример BFS в бинарном дереве:
 """
-from collections import deque
+
 
 def bfs(root, target):
     if root is None:
@@ -58,6 +63,7 @@ def bfs(root, target):
         if node.right is not None:
             queue.append(node.right)
     return False
+
 
 # Пример использования аналогичен примеру DFS
 

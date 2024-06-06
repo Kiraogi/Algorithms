@@ -12,11 +12,13 @@
 указывающий, что элемент отсутствует в массиве.
 """
 
+
 def linear_search(arr, target):
     for index, value in enumerate(arr):
         if value == target:
             return index  # Возвращаем индекс найденного элемента
     return -1  # Элемент не найден
+
 
 # Пример использования
 array = [5, 3, 7, 1, 9, 8]

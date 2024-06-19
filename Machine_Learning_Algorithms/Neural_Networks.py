@@ -21,7 +21,6 @@
 Одним из популярных фреймворков для работы с нейронными сетями в Python является TensorFlow, вот простой пример
 создания и обучения нейронной сети с помощью Keras (высокоуровневый интерфейс для TensorFlow):
 """
-
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense

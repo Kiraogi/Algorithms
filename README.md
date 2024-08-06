@@ -6,6 +6,7 @@
 *	Heap Sort (Пирамидальная сортировка)
 *	Insertion Sort (Сортировка вставками)
 *	Selection Sort (Сортировка выбором)
+*   Radix Sort (Поразрядная сортировка)
 ### 2. Search Algorithms (Алгоритмы поиска)
 *	Linear Search (Линейный поиск)
 *	Binary Search (Бинарный поиск)
